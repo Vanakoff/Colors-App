@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,18 +14,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colors_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUR-Ho-Gz5">
-                                <rect key="frame" x="20" y="64" width="374" height="200"/>
+                                <rect key="frame" x="20" y="20" width="280" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="jgb-0d-ESf"/>
+                                    <constraint firstAttribute="height" constant="150" id="jgb-0d-ESf"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z2M-im-shv">
-                                <rect key="frame" x="20" y="304" width="374" height="106"/>
+                                <rect key="frame" x="20" y="200" width="280" height="106"/>
                                 <subviews>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ruW-w0-hJA">
                                         <rect key="frame" x="0.0" y="0.0" width="95.5" height="106"/>
@@ -79,27 +79,30 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xoU-iH-Bg4">
-                                        <rect key="frame" x="105.5" y="0.0" width="268.5" height="106"/>
+                                        <rect key="frame" x="105.5" y="0.0" width="174.5" height="106"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="49Y-6O-a3t">
-                                                <rect key="frame" x="-2" y="0.0" width="272.5" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="178.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                 <connections>
                                                     <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="4Uk-fP-xd4"/>
                                                     <action selector="updateBackgroundColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Auy-9e-eRT"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="H6i-gW-w8b">
-                                                <rect key="frame" x="-2" y="38" width="272.5" height="31"/>
+                                                <rect key="frame" x="-2" y="38" width="178.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                 <connections>
                                                     <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Ya8-3Z-hAh"/>
                                                     <action selector="updateBackgroundColor" destination="BYZ-38-t0r" eventType="valueChanged" id="E9K-0C-4P6"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SUG-sN-nb1">
-                                                <rect key="frame" x="-2" y="76" width="272.5" height="31"/>
+                                                <rect key="frame" x="-2" y="76" width="178.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemGray2Color"/>
                                                 <connections>
                                                     <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="yPd-68-VeK"/>
                                                     <action selector="updateBackgroundColor" destination="BYZ-38-t0r" eventType="valueChanged" id="dMm-Uq-NL9"/>
@@ -111,13 +114,13 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.097298242151737213" green="0.27569615840911865" blue="0.94404679536819458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.22781646251678467" green="0.022007226943969727" blue="0.97131925821304321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JUR-Ho-Gz5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="CVo-Nc-pSX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z2M-im-shv" secondAttribute="trailing" constant="20" id="GoC-V3-UMn"/>
                             <constraint firstItem="JUR-Ho-Gz5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rq9-Gw-U8j"/>
                             <constraint firstItem="z2M-im-shv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VvT-tZ-MxQ"/>
-                            <constraint firstItem="z2M-im-shv" firstAttribute="top" secondItem="JUR-Ho-Gz5" secondAttribute="bottom" constant="40" id="Z6b-WM-0tQ"/>
+                            <constraint firstItem="z2M-im-shv" firstAttribute="top" secondItem="JUR-Ho-Gz5" secondAttribute="bottom" constant="30" id="Z6b-WM-0tQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JUR-Ho-Gz5" secondAttribute="trailing" constant="20" id="sUf-iS-tw6"/>
                         </constraints>
                     </view>
@@ -142,6 +145,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
