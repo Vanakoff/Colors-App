@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         updateBackgroundColor()
     }
 
-    
     @IBAction func redSliderAction() {
         redLabelValue.text = String(format: "%.2f", redSlider.value)
     }
