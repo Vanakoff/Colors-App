@@ -44,4 +44,3 @@ class ViewController: UIViewController {
         resultColorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
     }
 }
-
